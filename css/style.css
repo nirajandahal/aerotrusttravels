@@ -1,0 +1,836 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-select:focus {
+    box-shadow: none;
+}
+
+.header-links ul li a, .offcanvas-body ul li a{
+    color:#000;
+    font-weight: 500;
+    font-size: 14px;
+    /* margin: 0 14px 0 0; */
+}
+
+.header-links ul li .ib-cta-btn {
+    margin:0 0 0 8px;
+    color:#fff;
+}
+
+.header-links ul li a:hover{
+    color: #055160;
+}
+
+header{
+    font-weight: 500;
+    /* background-color: #d8fdff; */
+}
+
+header .ib-logo{
+    color:#000;
+    max-width: 210px;
+}
+
+header ul li .ib-cta-btn {
+    padding: 0.6rem 1rem;
+}
+
+.header-top {
+    background-color:#1d3e86;
+    color:#fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-top .social-icons a {
+    color:#fff;
+    display: inline-block;
+    margin:0 6px 0 0;
+}
+
+@media only screen and (max-width:540px){
+    .header-links ul li a.nav-link {
+        padding: 0 0.4rem;
+        font-weight: 600;
+    }
+}
+
+.hero-section {
+    display:flex;
+    align-items: center;
+    background-color: #e9feff;
+    /* color:#fff; */
+}
+
+.carousel-item {
+    height:80vh;
+    position: relative;
+}
+
+@media only screen and (max-width:990px) {
+    .hero-section h1{
+        font-size: 34px !important;
+    }
+}
+
+@media only screen and (max-width:575px) {
+   
+
+    .hero-section .carousel .carousel-inner img{
+       height:100%;
+    }
+
+    .hero-section h1{
+        margin:1rem 0 0 0;
+    }
+
+    .offcanvas-body ul li a.nav-link {
+        margin: 0 0 16px;
+        padding:0 0 4px 0;
+        font-weight: 600;
+        border-bottom : 1px solid #006267;
+    }
+
+    .offcanvas-body ul li a.ib-cta-btn {
+        padding: 6px 12px;
+        border:none;
+    }
+}
+
+.primary-link, .primary-color{
+    color:#178748;
+}
+
+.primary-background{
+    background-color:#178748;
+    color:#fff;
+}
+
+.primary-outline{
+    border:2px solid #178748;
+    background-color: #fff;
+    color:#178748;
+}
+
+
+.ib-cta-btn{
+    background-color: #128846;
+    color:#fff;
+    padding:0.6rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow : 2px 2px 8px #777;
+}
+.ib-cta-btn:hover {
+    box-shadow: none;
+    color:#fff;
+    background-color: #0a6231;
+}
+
+.ib-links {
+    color: #0a6231;
+}
+
+.hero-section .ib-cta-btn{
+    margin:20px 0;
+}
+
+.mobile-nav .ib-cta-btn{
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+
+/* login/signup form */
+.ls-modal p {
+    font-weight: 400;
+    font-size: 18px;
+}
+.ls-modal form label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ls-modal form .submit-button, .ls-modal .submit-button {
+    background-color: #055160;
+    color:#fff;
+    font-size: 14px;
+}
+
+.ls-modal form .form-check-input:checked{
+    background-color: #055160;
+}
+
+.google-btn {
+    background-color: #ea4335;  
+    font-size: 12px; 
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    font-size: 12px;
+}
+.ls-modal a {
+    color: #055160;
+    font-size: 12px;
+}
+/* login/signup form */
+
+
+
+/* about section*/
+
+.about-section p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.about-section .about-featured-image img {
+    border-radius: 25%;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.about-section .about-featured-image img:hover {
+    border-radius : 25% 0 25% 0;
+    transition: 0.3s;
+}
+
+.how-we-work{
+    margin:5rem 0;
+}
+
+.our-partners li, .services-list li {
+    text-align: center;
+}
+
+
+.our-partners li a, .services-list li a{
+    display: inline-block;
+    padding: 2rem 0 0.8rem;
+    min-width:148px;
+    min-height:148px;
+}
+
+
+.our-partners li a{
+    box-shadow: 2px 0px 6px #055160;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.services-list i {
+    font-size: 100px;
+    color:#444;
+}
+
+ .services-list li img{
+    height:20rem;
+    width:30rem;
+}
+
+.our-partners li img {
+    height:100%;
+    width:100%;
+}
+
+.services-list li div {
+    padding: 35px;
+    box-shadow: 0px 0px 20px #cdcdcd;
+    background-color: #e9feff;
+    margin: 0 0 20px 0;
+    transition: 0.6s;
+}
+
+.services-list li div:hover{
+    /* box-shadow: 0px 0px 10px #6fb4b7; */
+    /* background-color: #e9feff; */
+    box-shadow:none;
+    transition: 0.4s;
+}
+
+.services-list li div a {
+    display: block;
+}
+
+.our-partners li a:hover{
+    box-shadow: 0px 0px 2px #777 inset;
+    background-color: #e9feff;
+    transition: 0.2s;
+}
+
+.our-partners li a:hover{
+    background-color: #fff;
+}
+
+
+.our-partners li a, .services-list li a{
+    color: #006267;
+}
+
+.services-list h6{
+    font-size: 2rem;
+    margin: 1rem 0 0.8rem;
+}
+
+.services-list p{
+    font-size:1rem;
+    line-height: 1.4rem;
+}
+
+.recommended-popular .filter-user-form form {
+    padding: 30px 20px;
+    box-shadow: 2px 2px 6px #e3e3e3;
+    background-color: #6fb4b7;
+}
+
+.recommended-popular .filter-user-form form select {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border: none;
+    background-color: #e9feff;
+}
+
+.recommended-popular .filter-user-form form:hover {
+    box-shadow: 4px 4px 18px #055160;
+}
+/* about section */
+
+/* treks section */
+.linked-cards{
+	position: relative;
+}
+.linked-cards .card-link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	cursor: pointer;
+}
+
+.card-overlay:hover .overlay-text{
+	bottom:20px;
+}
+.overlay-text{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+/*top destinations card*/
+/*top destinations card 2*/
+.top-destinations-card-2:hover {
+	box-shadow: 2px 2px 20px #a7a7a7;
+	background-color: #dbf1e5;
+}
+
+.top-destinations-card-2 .card-image {
+    background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/Best-treks-in-Nepal-%E2%80%93-Three-passes-trek-Gokyo-Ri.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.card-image{
+	height: 280px;
+}
+
+.left-container .card-image{
+	height: 350px;
+}
+
+.top-destinations-card-2 .card-price h6{
+	font-size: 21px;
+}
+
+span.price-tag{
+	position: absolute;
+	top: 20px;
+	left: -10px;
+	z-index: 3;
+}
+span.price-tag:before{
+	position: absolute;
+	content: '';
+	bottom: -12px;
+	left: -2px;
+	z-index: 2;
+	/*border-left: 15px solid red;
+	*/
+	border-right: 10px solid #a04211;
+	/*border-top: 15px solid yellow;
+	*/
+	border-bottom: 10px solid transparent;
+}
+/*top destinations card*/
+/* treks section  */
+
+/* recommended sections */
+.policy-card-2 {
+    background-color: #e9feff;
+    padding:18px;
+}
+/* recommended sections */
+
+/* our partners */
+.our-partners {
+    background-color: #e9feff;
+}
+/* our partners */
+
+
+/* testimonials section */
+.testimonials-section {
+    background-color: #d8fdff;
+}
+
+.testimonials-section .testimonials-carousel img{
+    height:200px;
+    width:200px;
+}
+
+.testimonials-carousel .carousel-control-next-icon,.testimonials-carousel .carousel-control-prev-icon {
+    background-color: #055160;
+    height:60px;
+    width:60px;
+    display: inline-block;
+}
+/* testimonials section */
+
+
+/* cta section */
+.cta-section{
+    background-color: #055160;
+    color:#fff;
+}
+
+.cta-section span {
+    font-size: 24px;
+    display: inline-block;
+    margin:0 0 0 12px;
+}
+.cta-section .social-icons a {
+    color:#fff;
+    font-size: 28px;
+    margin:0 12px 0 0;
+}
+/* cta section */
+
+.contact-us {
+   
+    background-color: #d8fdff;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="number"], .contact-form select, .contact-form option{
+    height:50px; 
+}
+
+
+/* footer section */
+footer {
+    background-color: #055160; 
+}
+
+.footer-navigation {
+    background-color: #006267;
+}
+
+footer a {
+    color:#e9feff;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    margin:0;
+    font-size: 10px;
+    color:#e9feff;
+}
+
+.footer-logos .footer-logo-img{
+    background-color: #ccc;
+    padding:6px;
+    display: inline-block;
+    margin-bottom:4px;
+}
+
+footer p,footer a{
+    font-size: 1rem;
+    color: #aeaeae;
+    line-height: 28px;
+}
+
+footer a:hover{
+    color: #dcdcdc;
+}
+
+footer .social a{
+    color: #fcdb04;
+}
+
+@media only screen and (max-width : 990px) {
+    .footer-navigation a {
+        font-size: 12px;
+        margin:0 8px 0 0;
+        text-decoration: underline;
+    }
+}
+/* footer section */
+
+
+/* *****************************select policy page********************************** */
+.page-banner {
+    background-color: #e9feff;
+    border-radius:10px;
+    color:#055160;
+}
+.policy-filter-section .filter-options {
+    background-color: #e9feff;
+}
+
+.policy-filter-section .filter-user-form label {
+    color:#444;
+}
+
+.policy-filter-section .profile-tabs .nav-link {
+    padding: 2px 4px;
+    color:#055160;
+    font-size: 14px;
+}
+
+.policy-filter-section .profile-tabs .nav-link.active{
+    background: none;
+    color:#055160;
+    border-bottom: 1px solid #055160;
+}
+
+.filter-options h5 span {
+    display: inline-block;
+    margin: -2px 6px 0 0;
+    font-weight: 600;
+}
+
+.filter-user-form label{
+    color:#fff;
+    font-size: 12px;
+}
+
+.policy-card {
+    box-shadow: 1px 1px 5px #e3e3e3;
+    min-height: 180px;
+}
+
+.policy-card:hover {
+    background-color: #e9feff;
+    box-shadow: none;
+}
+
+.policy-card img{
+    width:100%;
+}
+
+.policy-card a.ib-cta-btn{
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.policy-card span {
+    font-size: 12px;
+    background-color: #f1f1f1;
+    padding: 0 4px;
+}
+
+.policy-card .ret-amt {
+    color:#00922c;
+}
+
+
+.filter-selected-summary p {
+    font-size: 12px;
+    color:#000;
+}
+
+@media only screen and (max-width:1200px) {
+    .policy-card a.ib-cta-btn {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+}
+
+@media only screen and (max-width:990px) {
+    .filter-user-form label {
+        font-size: 12px;
+    }
+
+    .filter-user-form .form-select , .filter-user-form .form-select option {
+        font-size: 12px;
+    }
+
+    .policy-card p {
+        font-size: 13px;
+    }
+
+    .policy-card h4 {
+        font-size: 18px;
+    }
+
+    .policy-card span {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .filter-options  {
+        margin:0 0 1rem 0;
+    }
+}
+
+
+/* *****************************select policy page********************************** */
+
+/* *****************************product detail page********************************** */
+
+.product-detail-section p { 
+    font-size: 14px;
+}
+.product-detail-section .product-detail-description {
+    max-height : 35vh;
+    overflow : auto;
+}
+
+.product-detail-description strong{
+    color:#055160;
+}
+
+@media only screen and (max-width : 990px) {
+    .product-detail-section h1 {
+        font-size: 1.6rem !important;
+    }
+}
+
+/* *****************************product detail page********************************** */
+
+
+
+/* *****************************insurance detail page********************************** */
+.insurance-logo img{
+    min-height: 250px;
+}
+
+.insurance-detail-summary span {
+    font-size: 12px;
+    background-color: #f1f1f1;
+    padding: 0 4px;
+}
+
+.insurance-detail-summary .ret-amt {
+    color:#00922c;
+}
+
+.insurance-card i {
+    font-size: 38px;
+}
+/* *****************************insurance detail page********************************** */
+
+
+/* *****************************checkout page********************************** */
+.page-banner-dark {
+    background-color: #055160;
+    color:#e9feff;
+}
+.checkout-form {
+    padding:1rem;
+    /* box-shadow:0px 0px 4px #777; */
+    /* background-color: pink; */
+}
+
+.card-info-checkout {
+    background-color: #006267;
+    color:#fff;
+}
+
+.card-info-checkout .btn-check:checked+.btn-outline-success,.card-info-checkout .btn-outline-success:hover {
+    color: #fff;
+    background-color: #006267;
+    border-color: #006267;
+}
+
+.card-expiration-date .form-select {
+    display: inline-block;
+    width:45%;
+}
+
+.insurance-order-summary {
+    font-size: 14px;
+}
+
+.wallet-image img{
+    width: 180px;
+}
+
+
+/* *****************************checkout page********************************** */
+
+
+/* ************************************compare page******************************* */
+
+.comparison-row {
+    overflow: auto;
+}
+
+.comparison-table {
+    max-width: 900px;
+    font-size: 14px;
+}
+
+.comparison-table:hover {
+    /* box-shadow: 2px 2px 8px #055160;
+    background-color: #e9feff;
+    transition: 0.3s; */
+}
+.comparison-table img {
+    width:300px;
+    height:140px;
+}
+
+.comparison-table h4{
+    color:#055160;
+}
+
+.comparison-table .card-text .comparison-table-number {
+    font-size: 21px;
+}
+
+.comparison-table .card-text .comparison-table-number small {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.comparison-table a {
+    display: block;
+}
+
+/* ************************************compare page******************************* */
+
+
+
+/* ************************************user profile page******************************* */
+
+.user-profile-intro p {
+    font-size: 14px;
+    max-width:80%;
+}
+
+.profile-tabs {
+    border: none;
+}
+
+.profile-tabs li a.nav-link{
+    color:#055160;
+    border:none;
+}
+
+.profile-tabs .nav-link.active {
+    font-weight: 400;
+    border : none;
+    color: #e9feff;
+    border-bottom:2px solid #055160;
+    background-color: #006267;
+}
+
+.user-profile .policy-card img {
+    width:200px;
+}
+
+.user-profile-nav {
+    margin: 0 0 30px 0;
+}
+
+.user-profile-nav a{
+    display: inline-block;
+    margin:0 6px 0 0;
+    font-size: 14px;
+    color:#055160;
+    padding: 2px 6px;
+    border-bottom: 1px solid #055160;
+}
+
+.user-profile-nav a:hover{
+    background-color: #d8fdff;
+}
+
+@media only screen and (max-width:575px) {
+    .user-profile-menu {
+        min-height: auto;
+        display: flex;
+        justify-content: space-between;
+        border:none;
+        box-shadow: none;
+    }
+
+    .user-profile-menu a{
+        padding:0;
+        font-size: 14px;
+    }
+}
+
+.profile-section-heading h6{
+    font-size: 12px;
+    color:#777;
+}
+
+.profile-personal-details {
+    font-size: 14px;
+}
+
+.profile-item-info, .user-intro-details {
+    font-size: 14px;
+}
+
+/* ************************************user profile page******************************* */
+
+/* ************************************create policy page******************************* */
+
+.create-policy h6 {
+    line-height: 26px;
+    color: #444;
+}
+
+.form-check-input:checked {
+    background-color: #055160;
+    border-color: #055160;
+}
+
+.search-form {
+    box-shadow: 1px 1px 2px #6fb4b7;
+}
+
+.search-form button{
+    background-color: #055160;
+    color:#fff;
+}
+
+.search-form button:hover {
+    background-color: #fd5000;
+    color:#fff;
+}
+
+.search-form button:focus, .search-form input[type= text]{
+    box-shadow: none;
+}
+
+/* ************************************create policy page******************************* */

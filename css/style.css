@@ -562,7 +562,10 @@ footer .social a{
     background-color: #e9feff;
     border-radius:10px;
     color:#055160;
+    margin: 24px 0;
 }
+
+
 .policy-filter-section .filter-options {
     background-color: #e9feff;
 }
@@ -694,22 +697,130 @@ footer .social a{
 
 
 /* *****************************insurance detail page********************************** */
-.insurance-logo img{
-    min-height: 250px;
-}
 
-.insurance-detail-summary span {
+
+.service-detail-summary span {
     font-size: 12px;
     background-color: #f1f1f1;
     padding: 0 4px;
 }
 
-.insurance-detail-summary .ret-amt {
-    color:#00922c;
+.service-detail p {
+    color: #555;
+    font-weight: 300;
 }
 
-.insurance-card i {
-    font-size: 38px;
+.service-card i {
+    font-size: 21px;
+}
+
+.service-card p {
+    color: #777;
+}
+
+.image-gallery {
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-gallery .image-column {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 1rem 1rem;
+}
+
+.image-gallery .image-column img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width : 1820px) {
+    .image-gallery .image-column {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width : 1600px) {
+    .image-gallery .image-column {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media only screen and (max-width : 1420px) {
+    .image-gallery .image-column {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media only screen and (max-width : 1280px) {
+    .image-gallery .image-column {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width : 1140px) {
+    .image-gallery .image-column {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .image-gallery .image-column {
+        width: 12rem;
+        height: 12rem;
+        margin: 0 0.5rem 0.5rem;
+    }
+}
+
+@media only screen and (max-width : 994px) {
+    .image-gallery .image-column {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+
+@media only screen and (max-width : 860px) {
+    .image-gallery .image-column {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width : 790px) {
+    .image-gallery .image-column {
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+}
+
+@media only screen and (max-width : 750px) {
+    .image-gallery .image-column {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .image-gallery .image-column {
+        width: 45%;
+        height: 8rem;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .image-gallery .image-column {
+        width: 40%;
+        height: 8rem;
+    }
 }
 /* *****************************insurance detail page********************************** */
 

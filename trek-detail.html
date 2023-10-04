@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Insurance Bazaar</title>
+
+    <style>
+        .detail-feature-image img {
+            height: 40vh;
+            width: 100%;
+        }
+
+        .iterinary-content p {
+            color: #777;
+            font-weight: 300;
+        }
+
+        .contact-by-call {
+            border: 2px solid #178748;
+            text-align: center;
+            color:#fff;
+            position: relative;
+            height: 260px;
+        }
+
+        .contact-by-call .content{
+            position: absolute;
+            content: '';
+            height : 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.6);
+            padding: 30px 0;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<header class="sticky-top border bottom">
+  <div class="header-top">
+    <div class="container py-1">
+      <div class="d-flex justify-content-between">
+        <div class="social-icons">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="contact-information">
+          +977 9862155336
+        </div>
+        <div class="location-information d-none d-sm-block">
+          Pashupatinath, Kathmandu
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="py-3 bg-white">
+        <div class="container py-2 py-sm-3 d-flex justify-content-between align-items-center">
+            
+            <div class="fw-bolder display-6"> <a href="index.html" class="ib-logo">IB</a></div>
+
+            <div class="header-links d-none d-md-block">
+                <ul class="navbar list-unstyled d-flex m-0 p-0">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Policy</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Renewal</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Claim</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Support Center</a></li>
+                    <li class="nav-item"><a href="" class="nav-link cta-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-nav d-md-none">
+              <button class="btn cta-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">More</button>
+            </div>
+
+            
+        </div>    
+    </div>
+</header> 
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Insurance Bazaar</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar list-unstyled m-0 p-0 d-block">
+      
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Policy</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Renewal</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Claim</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Support Center</a></li>
+        <!-- <li class="nav-item nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-search"></i></li> -->
+        <li class="nav-item"><a href="" class="nav-link cta-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="fw-bold trek-destination-title border-bottom pb-2 mb-4">Everest Base Camp Trek</h2>
+        </div>
+       
+        <div class="col-md-7 detail-feature-image">
+           <img src="https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJla3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80">
+
+           <div class="col-12 d-flex py-4">
+                <h6 class="font-weight-bold me-4"><i class="mr-1 fa fa-clock-o primary-color" aria-hidden="true"></i> 10 days</h6>
+                <h6 class="font-weight-bold me-4"><i class="mr-1 fa fa-calendar primary-color" aria-hidden="true"></i> Available</h6>	
+                <h6 class="font-weight-bold me-4"><i class="mr-1 fa fa-child primary-color" aria-hidden="true"></i> Min Age : 13+</h6>
+                <h6 class="font-weight-bold me-4"><i class="mr-1 fa fa-user primary-color" aria-hidden="true"></i> Max people : 30</h6>
+           </div>
+
+           <div class="service-detail mb-4 pb-4 border-bottom">
+            <h3 class="fw-bold mb-4">Includes / Excludes</h3>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> Hotel pickup and drop-off </p>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> English-speaking driver </p>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> Guaranteed window seat </p>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> 1-Hour Everest scenic flight </p>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> Flight tickets </p>
+                <p class="mb-1">  <i class="bi bi-check-circle-fill text-success me-2"></i> Adventure certificate </p>
+            
+                <p class="mb-1"><i class="bi bi-x-circle-fill text-danger me-2"></i> Meals </p>
+                <p class="mb-1"><i class="bi bi-x-circle-fill text-danger me-2"></i> Anything that is not mentioned in the itinerary </p>
+          </div>
+
+
+        </div>
+        <div class="col-md-5 ">
+            <div class="iterinary-content">
+                <h5 class="mb-4">Short Outline Iterinary</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <h6 class="mb-0 fw-bold">Day 01:</h6>
+                        <p>Arrival in Kathmandu airport 1,320 m and transfer to hotel.</p>
+                    </li>
+                    <li>
+                        <h6 class="mb-0 fw-bold">Day 02:</h6>
+                        <p>Full day sightseeing tour in Kathmandu at places of interest.</p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 03:</h6>
+                        <p>Drive or fly to Pokhara 860 m - 06 hrs journey (30 mins by air)</p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 04:</h6>
+                        <p>From Pokhara trek to Bhumdi 1,500m via Peace Stupa and Phumdi - 06 hrs.</p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 05: </h6>
+                        <p>Trek to Panchase Bhanjyang 2,200 m -05 hrs. </p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 06:</h6>
+                        <p>Hike to Panchase hill top 2,509m and trek to Bhadaure 1,670m,</p>
+                      </li>
+                      <li>
+                        <h6 class="mb-0 fw-bold">Day 07:</h6>
+                        <p>Trek to Sarankot 1,460 m -05 hrs.</p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 08:</h6>
+                        <p>Trek to Phewa Lake side at Pokhara and transfer to hotel - 04 hrs.</p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 09:</h6>
+                        <p>Drive / Fly to Kathmandu and transfer to hotel. </p>
+                      </li>
+                       <li>
+                        <h6 class="mb-0 fw-bold">Day 10:</h6>
+                        <p>Depart Nepal for international departure homeward bound.</p>
+                      </li>
+                </ul>
+              </div>
+              
+             
+            
+        </div>
+
+        <div class="col-md-8">
+            <div class="iterinary-content">
+                <h6>Everest is undoubtedly worth the title “Trekker’s Paradise”</h6>
+                <p>Everest stands tall with its beauty radiating across the Khumbu region. Traveling to the Everest Base Camp (EBC) must be a dream for almost all trekkers. Everest is undoubtedly worth the title “Trekker’s Paradise” for its immense beauty. The route to EBC is carved through majestic landscapes and sits on the laps of the world's highest mountains. If an individual seeks to explore nature at its finest, the EBC trek is a perfect choice. This trek takes you to the northeastern region of Nepal, the heart of Khumbu. Home to various mountains, diverse biological species, and the brave Sherpa people, the Khumbu presents a beautiful adventure to trekking enthusiasts.</p>
+            </div>
+            <div class="iterinary-content pb-5">
+                <h5 class="iterinary-detail primary-background btn mb-4">Click here for Detailed Day to Day Itinerary</h5>
+                <table class="table-striped iterinary-detail-table " width="100%">
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 01: Arrival in Kathmandu airport 1,320 m and transfer to hotel.</h6>
+                      <p>On reaching at Kathmandu and Nepal international airport received by our guide and staff for short transfer to your hotels in the centre of Kathmandu around Thamel area, an interesting place on checking your rooms and getting refreshed, our guide / leader will brief with information of the treks, local cultures and other necessary details to make your stay in Nepal enjoyable.</p>
+                      <p>Evening time with group welcome dinner in a nice authentic Nepalese restaurant serves typical local dinner with Folk and cultural program as entertainment with your delicious meals.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 02: Full day sightseeing tour in Kathmandu at places of interest.</h6>
+          
+                    <p>
+          
+                      In Kathmandu where our city guide takes you around for short drive and walk to visit interesting old monuments of religious and historical background around Old Durbar Square (palace courtyard), ancient Buddhist Stupa of Swayambhunath, Bouddhanath with Hindu temple of Pashupatinath, affter an enjoyable and fascinating tour head back to hotel with time for trek preparation leaving early morning for Pokhara. 
+                    </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 03: Drive or fly to Pokhara 860 m - 06 hrs journey (30 mins by air)</h6>
+                      <p>Morning as per group size either in private cars, coach and bus or taking tourist bus to reach at scenic Pokhara city a drive of 5-6 hrs journey on 220 k.m distance on interesting main Nepal highway past many farm villages and towns to reach at beautiful city in Pokhara and transfer to hotel near the lake side of serene Phewa Lake overlooking grand views of Annapurna with Machhapuchare Himal the Fish Tail peak.</p>
+                      <p>(By air from Kathmandu of 30 minutes flight to land at Pokhara airport)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 04:   From Pokhara trek to Bhumdi 1,500m via Peace Stupa and Phumdi - 06 hrs.</h6>
+                      <p>Panchase and Sarankot Hill Treks starts taking a boat ride or short drive from near to your hotel in Pokhara, after short boat ride, climb for an hour to reach Buddhist Peace or Shanti Stupa with ups through farm villages and patch of cool forest.</p>
+                      <p>Enjoy views from the top of Pokhara valley and the city with high snow capped mountain range walk takes you to Pumdi village and then at  Bhumdi village for overnight stop in a simple local lodge.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 05:   Trek to Panchase Bhanjyang 2,200 m -05-hrs.</h6>
+                      <p>Trek begins with gentle climb into cool alpine forest of oaks and rhododendron tree lines with views of Annapurna peaks and Mt. Machhapuchare, a pleasant trek for few hours till lunch, and then uphill climb with a descend to overnight stop at Panchase Bhanjyang 2,200 m,  at the base of Panchase hill offers grand  views of mountain range.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 06:   Hike to Panchase hill 2,509m and trek to Bhadaure village 1,670m.</h6>
+                      <p>Morning hike to Panchase hill top located at 2,509 m for super sunrise over Mt. Dhaulagiri, Annapurna and Mt. Manaslu range of mountains, beside views of peaks, a holy spot where local pilgrims visits here on religious festivals once a year in auspicious time. </p>
+                      <p>After an enjoyable time downhill to Bhanjyang, continue walk to Bhadaure village through serene forest till Bhadaure village, a moderate size Gurung village with views of Dhaulagiri and Annapurna South.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 07:   Trek to Sarankot Hill 1,460 m -05 hrs. </h6>
+                      <p>
+                      Morning facing views of Annapurna and Dhaulagiri mountain range as route on quiet trail where few trekkers seldom walk around this area, leads to pleasant walk with climb to Naudanda offers magnificent views of Annapurna Himalaya.</p>
+                      <p>From Naudanda, walk leads along a ridge line and into warmer country within the area of Hindu farm villages populated by Brahmin and Chettries tribe, walk winds up on reaching at famous Sarankot for last and final overnight stop on high hills of Annapurna. </p>
+                      <p>Sarankot a popular place for sunrise and views of mountains, the tallest spot around Pokhara valley, beside stunning panorama famous for paragliding which is one of the most popular adventures.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 08: Trek to Phewa Lake side at Pokhara and transfer to hotel - 04 hrs.</h6>
+                      <p>Morning catch striking sunrise views over range of snowcapped mountains, after breakfast walk downhill to reach at Phewa Lake to conclude our short morning walks, after a wonderful time on high scenic hills of Panchase and Sarankot Hill trekking. </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 09: Drive / Fly to Kathmandu and transfer to hotel.</h6>
+                      <p>After a pleasant stay in beautiful city Pokhara with fabulous mountain views, after early breakfast travel overland on the same highway, an interesting drive into farm villages and towns then on winding uphill to reach Kathmandu valley western rim, and then drive into hustle and bustle city life of Kathmandu, with time in the afternoon for individual activities and shopping.</p>
+                      <p>Evening enjoy last day group dinners in a pleasant Nepalese restaurants with folk dance and music from various parts of Nepal to entertain you with the last dinner in Nepal.</p>
+                      <p>By air from Pokhara to Kathmandu of 30 minutes scenic flight)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h6 class="font-weight-bold">Day 10: Depart Nepal for international departure homeward bound. </h6>
+                      <p>Last and final day in Nepal in the country of amazing Himalaya blended  with colorful culture, as per your time for international flight our staff, guide transfer you to airport for final departures home-ward after a most memorable experience and adventure on Panchase and Sarankot Hills Trekking.</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="contact-by-call mb-4"  style="background: url('https://www.friendsadventure.com/images/everest-region-trekking/gokyo-lake-trek.jpg') center center no-repeat; background-size: 100% 100%;">
+                <div class="content">
+                    <h1 class="font-weight-bold">Contact via Call</h1>
+                    <p class="font-weight-bold">+977 9862155336</p> 
+                    <p>OR</p>
+                    <a href="" class="cta-btn">Make a Booking</a>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <h6 class="fw-bold">Image Gallery</h6>
+            </div>
+        </div>
+       
+    </div>
+</div>

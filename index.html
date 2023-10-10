@@ -21,6 +21,105 @@
 
     <link rel="stylesheet" href="css/style.css">
     <title>Aero Trust Travel & Tours</title>
+
+    <style>
+      .carousel-inner {
+        position: relative;
+        content:'';
+        height: 100%;
+        width:100%;
+        background: rgba(0,0,0,0.5);
+      }
+
+      .banner-content {
+        position: absolute;
+        content:'';
+        bottom:0%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        padding: 40px 0;
+        border-radius : 10% 5%;
+      }
+
+      .banner-content:before {
+        position: absolute;
+        content:'';
+        background-color: #00922c;
+        display: block;
+        top: 0;
+        height: 5px;
+        width: 100%;
+        transition: 0.3s;
+      }
+
+      .banner-content:after {
+        position: absolute;
+        content:'';
+        background-color: #00922c;
+        display: block;
+        bottom: 0;
+        height: 5px;
+        width: 100%;
+        transition: 0.3s;
+      }
+
+      .banner-content:hover:before {
+        top: 10px;
+        transition: 0.3s;
+      }
+
+      .banner-content:hover:after {
+        bottom : 10px;
+        transition: 0.3s;
+      }
+
+      .services-list li .card-body{
+        padding: 0 0 30px;
+        margin: 0px 0px 20px;
+        transition: all 0.6s ease 0s;
+        background-color: #f2f2f2;
+        box-shadow: 0px 0px 100px #cdcdcd;
+        border-radius: 8%;
+      }
+
+      .services-list li .card-body:hover{
+          box-shadow:none;
+          transition: 0.4s;
+          background-color: #e2ffd3;
+      }
+
+      .services-list li .text-section {
+        padding: 0 1rem;
+      }
+
+      .services-list .sub-services p{
+        font-weight: 400;
+        padding: 4px 0 4px 8px;
+        margin:0;     
+      }
+
+      .services-list .sub-services p:hover, .services-list .sub-services p:hover a {
+       background-color:  #ff7f50;
+       color: #fff;
+      }
+
+      .services-list h6 {
+          font-size: 1.5rem;
+      }
+
+      .services-list li p {
+          color: #636363;
+          font-weight: 300;
+      }
+
+      .services-list li img {
+          height: 18rem;
+          width: 100%;
+          border-radius: 8%;
+      }
+
+    </style>
 </head>
 <body>
 
@@ -105,7 +204,7 @@
   </div>
 
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <!-- <div class="carousel-item active">
       <div class="d-flex justify-content-between">
         <div class="banner-text p-4 p-md-5 d-flex align-items-center">
           <div class="text-end px-md-3 px-lg-5">
@@ -132,20 +231,16 @@
           <img src="img/album_everest-heli-tour.jpg">
         </div>
     </div>
-    </div>
-    <div class="carousel-item ">
-      <div class="d-flex justify-content-between">
-        <div class="banner-text p-4 p-md-5 d-flex align-items-center">
-          <div class="text-end px-md-3 px-lg-5">
-            <h1>Mountain Flight</h1>
-            <p>Experience the serene beauty of the himalayas from the above.</p>
-            <a href="" class="cta-btn"> Book Now!</a>
+    </div> -->
+    <div class="carousel-item active" style="background: url('https://th.bing.com/th/id/R.2af9edf22fad93dc7416653ac573cf97?rik=SIxi6AiXW7ZiKg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fHD-PC-2016-wallpaper.jpg&ehk=gbDMfl2CnLyJzeNQLF49JjHuIpp%2fajdfnROATSDbin8%3d&risl=&pid=ImgRaw&r=0') center center no-repeat; background-size: cover; height: 70vh;">
+     
+          <div class="carousel-inner">
+            <div class="banner-content">
+              <h1>Mountain Flight</h1>
+              <p>Experience the serene beauty of the himalayas from the above.</p>
+              <a href="" class="cta-btn"> Book Now!</a>
+            </div>
           </div>
-        </div>
-        <div class="banner-image">
-          <img src="https://createhimalaya.com/images/trip/trip1543066554.jpg">
-        </div>
-    </div>
     </div>
   </div>
   <!-- Left and right controls/icons -->
@@ -175,20 +270,75 @@
      <h1 class="fw-bold display-5 text-center">Our Services</h1>
     </div>
 
-    <ul class="services-list list-unstyled row row-cols-1 g-5 row-cols-sm-2">
+    <ul class="services-list list-unstyled row row-cols-1 g-5 row-cols-sm-3">
       <li class="col">
-        <div>
-        <a href="product-page.html">
-          <!-- <i class="bi bi-people"></i> -->
+        <div class="card-body"> 
           <img src="img/everest-base-camp-heli-sightseeing.gif">
-          <h6 class="text-center mt-3">Helicopter Package</h6>
-          <p>Experience the serene beauty of the himalayas from above. Experience the serene beauty of the himalayas from above. Experience the serene beauty of the himalayas from above. Experience the serene beauty.</p>
-        </a>
-        <button class="mx-2 mb-2 btn primary-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="" aria-controls="offcanvasRight">View Detail</button>
-        <button class="mx-2 mb-2 btn primary-background" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBooking" aria-controls="offcanvasRight">Make a Booking</button>
+          <div class="text-section">
+              <h6 class="text-center mt-3">Flights</h6>
+              <p>Helicopter tour in Nepal is the best opportunity to enjoy Nepalese beauty as a falcon. Here's the list of packages. Pick the best as per your preference; this list is sorted as per the popularity of each trip. </p>
+              <div class="sub-services">
+                <p><a href="">International Flights</a></p>
+                <p><a href="">Domestic Flights</a></p>
+                <p><a href="">Mountain Flights</a></p>
+              </div>
+
+              <button class="mx-2 mb-2 mt-3 btn primary-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="" aria-controls="offcanvasRight">View Detail</button>
+              <button class="mx-2 mb-2 mt-3 btn primary-background" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBooking" aria-controls="offcanvasRight">Make a Booking</button>
+
+           </div> 
+        
+          
         </div>
       </li>
+
       <li class="col">
+        <div class="card-body"> 
+          <img src="img/everest-base-camp-heli-sightseeing.gif">
+          <div class="text-section">
+              <h6 class="text-center mt-3">Chopper</h6>
+              <p>Helicopter tour in Nepal is the best opportunity to enjoy Nepalese beauty as a falcon. Here's the list of packages. Pick the best as per your preference; this list is sorted as per the popularity of each trip. </p>
+              <div class="sub-services">
+                <p><a href="">Helicopter Rescue</a></p>
+                <p><a href="">Emergency Helicopter</a></p>
+                <p><a href="">Private Charter Heli</a></p>
+                <p><a href="">City Heli Tour</a></p>
+                <p><a href="">Mountain Heli Tour</a></p>
+              </div>
+
+              <button class="mx-2 mb-2 mt-3 btn primary-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="" aria-controls="offcanvasRight">View Detail</button>
+              <button class="mx-2 mb-2 mt-3 btn primary-background" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBooking" aria-controls="offcanvasRight">Make a Booking</button>
+
+           </div> 
+        
+          
+        </div>
+      </li>
+
+      <li class="col">
+        <div class="card-body"> 
+          <img src="img/everest-base-camp-heli-sightseeing.gif">
+          <div class="text-section">
+              <h6 class="text-center mt-3">Travel and Tour Guides</h6>
+              <p>Helicopter tour in Nepal is the best opportunity to enjoy Nepalese beauty as a falcon. Here's the list of packages. Pick the best as per your preference; this list is sorted as per the popularity of each trip. </p>
+              <div class="sub-services">
+                <p><a href="">Tours</a></p>
+                <p><a href=""> - City Tour</a></p>                
+                <p><a href=""> - Jungle Safari</a></p>
+                <p><a href=""> - Heritage Tours</a></p>
+                <p><a href="">Treks</a></p>
+                <p><a href="">Expeditions</a></p>
+              </div>
+
+              <button class="mx-2 mb-2 mt-3 btn primary-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="" aria-controls="offcanvasRight">View Detail</button>
+              <button class="mx-2 mb-2 mt-3 btn primary-background" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBooking" aria-controls="offcanvasRight">Make a Booking</button>
+
+           </div> 
+        
+          
+        </div>
+      </li>
+      <!-- <li class="col">
         <div>
         <a href="product-page.html">
           <i class="bi bi-clipboard-plus"></i>
@@ -220,7 +370,7 @@
         <button class="mx-2 mb-2 btn primary-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="" aria-controls="offcanvasRight">View Detail</button>
         <button class="mx-2 mb-2 btn primary-background" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBooking" aria-controls="offcanvasRight">Make a Booking</button>
         </div>
-      </li>
+      </li> -->
     </ul>
 
   
@@ -496,7 +646,7 @@
               </div>
             </div>
             <div class="col-12">
-              <button class="btn ib-cta-btn shadow-none" type="submit">Submit form</button>
+              <button class="btn cta-btn shadow-none" type="submit">Submit form</button>
             </div>
           </form>
         </div>
@@ -615,13 +765,13 @@
 
 
 <!-- featured resources section -->
-<section class="py-5" style="background-image: url('https://img.veenaworld.com/wp-content/uploads/2022/07/Mount-Everest-1024x684.webp'); background-size:cover; background-position : center center; background-color:rgba(0,0,0,0.4);">
+<section class="py-5" style="background-image: url('https://img.veenaworld.com/wp-content/uploads/2022/07/Mount-Everest-1024x684.webp'); background-size:cover; background-position : center center;>
   <div class="container">
     <div class="row text-center">
       <h1 class="fw-bold display-5 mb-4 py-4">Did not find what you are looking for?</h1>
       
       
-      <p><a href="create-policy.html" class="ib-cta-btn">View all Trek Packages</a> </p>
+      <p><a href="create-policy.html" class="cta-btn">View all Trek Packages</a> </p>
     </div>
     
   </div>
